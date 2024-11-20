@@ -30,9 +30,9 @@
 #define PA_OUTPUT_RFO_PIN          0
 #define PA_OUTPUT_PA_BOOST_PIN     1
 
-class LoRaClass : public Stream {
+class CMLoRaClass : public Stream {
 public:
-  LoRaClass();
+  CMLoRaClass();
 
   int begin(long frequency);
   void end();
@@ -131,6 +131,6 @@ private:
   void (*_onTxDone)();
 };
 
-extern LoRaClass LoRa;
+extern CMLoRaClass CMLoRa;
 
 #endif
